@@ -297,3 +297,7 @@ footer .footer-top {
   gap: var(--size-50);
   padding: var(--size-100) 0;
 }
+
+
+footer { background-color: var(--footer); } 
+footer.footer-base { background-color: var(--footer-base); }
