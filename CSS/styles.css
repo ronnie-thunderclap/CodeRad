@@ -372,3 +372,18 @@ footer .footer-col { justify-self: center;}
 
 }
 
+#scrollUp {
+  background-color: transparent;
+  background: linear-gradient(90deg, #9ccdfe, 0%, #94aafd 100%);
+  color: var(--white);
+  font-size: var(--size-18);
+  width: var(--size-40);
+  line-height: var(--size-40);
+  position: fixed;
+  bottom: var(--size-30);
+  right: var(--size-30);
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 100;
+}

@@ -20,10 +20,12 @@
   --size-20: 1.875rem;
   --size-30: 2.5rem;
   --size-40: 3.125rem;
-  --size-50: 6.25rem;
-  --size-100: 3.125rem;
+  --size-50: 4.25rem;
+  --size-100: 6.125rem;
   --size-150: 9.375rem;
 }
+
+html { scroll-behavior: smooth;}
 
 body {
   font-family: "Open Sans", sans-serif;
