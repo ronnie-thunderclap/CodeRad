@@ -7,6 +7,22 @@
   transition: ease-in-out 0.3s;
 } 
 
+.navbar-toggler {
+  position: absolute;
+  right: var(--size-20);
+  top: var(--size-10);
+  outline: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.navbar-toggler span {
+  color: var(--white);
+  font-size: var(--size-20);
+  cursor: pointer;
+  pointer-events: none;
+}
+
 [aria-controls="navbarDropdown"] {
   display: none;
 }
@@ -41,7 +57,10 @@
   padding: 4.6875rem 0;
 }
 
-.bg-header { background-image: url(/assets/images/bg-header-1.jpg); }
+.bg-header { 
+  background-image: url(/assets/images/bg-header-1.jpg); 
+  padding: var(--size-150) 0;
+}
 .video-demo { background-image: url(/assets/images/bg-demo.jpg); }
 
 .bg-header::before {
@@ -66,8 +85,8 @@
   font-weight: 600;
   font-family: "Hind", sans-serif;
   text-transform: uppercase;
-  margin-right: 2.5rem;
-  line-height: 1.25rem;
+  margin-right: var(--size-40);
+  line-height: var(--size-20);
 }
 
 .hero-header {
@@ -87,8 +106,13 @@
   flex: 1;
 }
 
+.why-me-wrapper .block-text {
+  padding: var(--size-100);
+  max-width: 40rem;
+}
+
 .block-text {
-  padding-right: var(-size-50);
+  padding-right: var(--size-50);
 }
 
 .block-text span {
@@ -154,6 +178,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #9ccdf3 0%, #94aafd 1
 .video-demo .block-text h2,
 .video-demo .block-text p {
   color: var(--white);
+  margin: var(--size-50) 0;
 } 
 
 .video-btn {
@@ -192,7 +217,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #9ccdf3 0%, #94aafd 1
 .price-card {
   background-color: var(--white);
   border-radius: 8px;
-  padding: var(--size-16);
+  padding: var(--size-40) var(--size-16);
 }
 
 .price-card .checked { color: var(--success);}
@@ -227,6 +252,7 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #9ccdf3 0%, #94aafd 1
 .price-card .icon { float: right;}
 
 .plan-btn-wrapper { text-align: center;}
+.plan-btn-wrapper a { width: 100%;}
 
 .testimonials { margin: var(--size-100) 0; }
 
@@ -291,6 +317,8 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #9ccdf3 0%, #94aafd 1
   line-height: 1.6;
 }
 
+
+
 footer .footer-top {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -308,6 +336,7 @@ footer .footer-col { justify-self: center;}
   color: var(--white);
   font-weight: 500;
   margin-bottom: var(--size-16);
+  font-size: var(--size-16);
 }
 
 .contact-info {
@@ -329,14 +358,16 @@ footer .footer-col { justify-self: center;}
 }
 
 .service-wrapper p { color: #858497;}
+.service-wrapper h5 { margin-bottom: initial;}
 
 .recent-post { 
   display: flex;
   margin-bottom: var(--size-16);
+  align-items: center;
 }
 
 .recent-post .post-img-wrapper {
-  width: 4.375rem;
+  width: 6.5rem;
   margin-right: var(--size-10);
 }
 
@@ -345,6 +376,7 @@ footer .footer-col { justify-self: center;}
 .post-inner h6 a { 
   color: var(--white); 
   font-weight: 600;
+  font-size: 0.75rem;
 }
 
 .post-inner span {
@@ -380,10 +412,56 @@ footer .footer-col { justify-self: center;}
   width: var(--size-40);
   line-height: var(--size-40);
   position: fixed;
-  bottom: var(--size-30);
-  right: var(--size-30);
+  bottom: var(--size-100);
+  right: var(--size-50);
   text-align: center;
   border-radius: 8px;
   cursor: pointer;
   z-index: 100;
+}
+
+.floating-bar {
+  bottom: 5rem;
+  right: var(--size-150);
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  background-image: linear-gradient(90deg, #6b4eec, 40%, #0ac6e7 100%);
+  align-items: center;
+  border-radius: 5px;
+  width: 35rem;
+  padding-left: var(--size-100);
+  padding-right: 20px;
+}
+
+.floating-bar h4 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.floating-bar { color: var(--white);}
+
+.floating-bar p { 
+  font-size: 0.7rem; 
+  color: var(--font-color-light);
+}
+
+.floating-bar .question {
+  justify-self: flex-start;
+}
+
+.floating-bar .btn-contact {
+  margin-left: auto;
+  background-color: var(--white);
+  font-size: 0.7rem;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 0.475rem 0.75rem;
+}
+
+.floating-bar img {
+  width: var(--size-40);
+  margin-right: 50px;
+  margin-left: -20px;
+  margin-bottom: -3.85px;
 }
