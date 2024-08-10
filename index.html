@@ -24,9 +24,9 @@
   </head>
   <body>
     <div id="pageTop"></div>
-    <nav class="navbar nav">
+    <nav id="topNav" class="navbar nav">
       <div class="container">
-        <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown" >
+        <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
           <span>&#9776;</span>
         </button>
         <a class="navbar-brand" href="index.html">CodeRAD</a>
@@ -478,6 +478,15 @@
 </a>
 
 <script>
+  const nav = document.getElementById("topNav");
+  window.onscroll = function () {
+    if (window.pageYOffset > 100) {
+      nav.classlist.add("sticky");
+    } else {
+      nav.classList.remove("sticky");
+    }
+  }
+
   const navButton = document.querySelector ('button[aria-expanded]');
 
   function toggleNav({ target }) { 
