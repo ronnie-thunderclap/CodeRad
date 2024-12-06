@@ -105,7 +105,7 @@
 }
 
 .why-me {
-  padding: var(--size-50) 0;
+  padding: var(--size-150) 0;
 }
 
 .why-me-wrapper {
@@ -219,9 +219,10 @@ span.bg-color-6 { background-image: linear-gradient(90deg, #9ccdf3 0%, #94aafd 1
 .pricing-table {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
-  gap: var(--size-18);
+  gap: var(--size-40);
   margin: auto;
   align-items: flex-start;
+  padding: 10px;
 }
 
 
@@ -341,7 +342,10 @@ footer .footer-top {
 footer { background-color: var(--footer); } 
 footer.footer-base { background-color: var(--footer-base); }
 
-footer .footer-col { justify-self: center;}
+footer .footer-col { 
+  justify-self: center;
+  max-width: 250px;
+}
 
 .footer-top h5 {
   color: var(--white);
