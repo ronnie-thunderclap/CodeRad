@@ -68,6 +68,16 @@
   padding: 4.6875rem 0;
 }
 
+.nav-link a {
+  color: var(--white);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-family: "Hind", sans-serif;
+  text-transform: uppercase;
+  margin-right: var(--size-40);
+  line-height: var(--size-20);
+}
+
 .bg-header { 
   background-image: url(/assets/images/bg-header-1.jpg); 
   padding: var(--size-150) 0;
@@ -90,15 +100,6 @@
   content: "";
 }
 
-.nav-link a {
-  color: var(--white);
-  font-size: 0.8125rem;
-  font-weight: 600;
-  font-family: "Hind", sans-serif;
-  text-transform: uppercase;
-  margin-right: var(--size-40);
-  line-height: var(--size-20);
-}
 
 .hero-header {
   color: var(--white);
